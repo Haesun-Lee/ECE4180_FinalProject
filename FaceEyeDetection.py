@@ -1,10 +1,10 @@
 import numpy as np
 import cv2
 import os
-os.chdir("/home/pi/opencv-3.4.1/data/haarcascades")
+os.chdir("/home/heyjueun/opencv-3.3.0/data/haarcascades")
 # multiple cascades: https://github.com/Itseez/opencv/tree/master/data/haarcascades
-faceCascade = cv2.CascadeClassifier('/home/pi/opencv-3.4.1/data/haarcascades/haarcascade_frontalface_default.xml')
-eyeCascade = cv2.CascadeClassifier('/home/pi/opencv-3.4.1/data/haarcascades/haarcascade_eye.xml')
+faceCascade = cv2.CascadeClassifier('/home/heyjueun/opencv-3.3.0/data/haarcascades/haarcascade_frontalface_default.xml')
+eyeCascade = cv2.CascadeClassifier('/home/heyjueun/opencv-3.3.0/data/haarcascades/haarcascade_eye.xml')
 
 cap = cv2.VideoCapture(0)
 cap.set(3,640) # set Width

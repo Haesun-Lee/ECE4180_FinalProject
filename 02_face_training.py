@@ -3,11 +3,11 @@ import numpy as np
 from PIL import Image
 import os
 # Path for face image database
-path = 'dataset'
+path = '/home/heyjueun/Desktop/Face-Recognition-using-Raspberry-Pi/dataset'
 
-os.chdir("/home/pi/opencv-3.4.1/data/haarcascades")
+os.chdir("/home/heyjueun/opencv-3.3.0/data/haarcascades")
 recognizer = cv2.face.LBPHFaceRecognizer_create()
-detector = cv2.CascadeClassifier("/home/pi/opencv-3.4.1/data/haarcascades/haarcascade_frontalface_default.xml");
+detector = cv2.CascadeClassifier("/home/heyjueun/opencv-3.3.0/data/haarcascades/haarcascade_frontalface_default.xml");
 # function to get the images and label data
 def getImagesAndLabels(path):
     imagePaths = [os.path.join(path,f) for f in os.listdir(path)]
@@ -26,6 +26,6 @@ print ("\n [INFO] Training faces. It will take a few seconds. Wait ...")
 faces,ids = getImagesAndLabels(path)
 recognizer.train(faces, np.array(ids))
 # Save the model into trainer/trainer.yml
-recognizer.write('/home/pi/FaceRecognition/trainer/trainer.yml') # recognizer.save() worked on Mac, but not on Pi
+recognizer.write('/home/heyjueun/Desktop/Face-Recognition-using-Raspberry-Pi/trainer/trainer.yml') # recognizer.save() worked on Mac, but not on Pi
 # Print the numer of faces trained and end program
 print("\n [INFO] {0} faces trained. Exiting Program".format(len(np.unique(ids))))
