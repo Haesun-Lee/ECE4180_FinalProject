@@ -64,24 +64,24 @@ The main software tools that we are going to use for our final project are OpenC
 
 
 #### Connection Table for Uncommon Components
-| Raspberry pi | L293 Motor Driver | DC Motor1 | CD Motor2 | Push Buttons | RGB LED | USB Cam | Power Supply |
-|--------------|-------------------|-----------|-----------|--------------|---------|---------|--------------|
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
-|              |                   |           |           |              |         |         |              |
+| Raspberry pi | L293 Motor Driver | DC Motors | Push Buttons | RGB LED | USB Cam | Power Supply |
+|--------------|-------------------|-----------|--------------|---------|---------|--------------|
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
+|              |                   |           |              |         |         |              |
 
 (Note: Use of external 5v power is REQUIRED, because we need enough current to drive servos.
 
