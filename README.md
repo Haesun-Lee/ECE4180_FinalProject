@@ -6,7 +6,7 @@
 
 Watch our video presentation and demo:
 
-Presentation (5min): https://youtu.be/BhbdnVkSK4Q
+Presentation (5min): 
 
 Demonstration (2min): https://youtu.be/0pqdkLO-uRU
 
@@ -59,8 +59,12 @@ Here's a few pictures of our fully assembled device.
 
 The main software tools that we are going to use for our final project are OpenCV (an open-source computer vision package) to first collect the student’s face data and recognize the student face by training the data. 
 
+### Flow Chart
+![](/Flowchart.png)
+
+
 #### Schematic
-![](https://github.com/oscargao98/4180_Final_Project/blob/main/sch_new.png)
+
 
 #### Connection Table for Uncommon Components
 | Raspberry pi | L293 Motor Driver | DC Motor1 | CD Motor2 | Push Buttons | RGB LED | USB Cam | Power Supply |
@@ -85,6 +89,8 @@ The main software tools that we are going to use for our final project are OpenC
 (Note: Use of external 5v power is REQUIRED, because we need enough current to drive servos.
 
 ## Source Code
+
+## Future Direction
 
 
 
