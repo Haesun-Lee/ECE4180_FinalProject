@@ -11,7 +11,7 @@ Presentation (5min): https://youtu.be/BhbdnVkSK4Q
 Demonstration (2min): https://youtu.be/0pqdkLO-uRU
 
 
-![A nice picture of us](https://github.com/Haesun-Lee/ECE4180_FinalProject.git/Photos/Car_front.jpeg)
+![Robot Picture](/Car_front.jpeg)
 
 
 ## Table of Content
@@ -22,12 +22,10 @@ Demonstration (2min): https://youtu.be/0pqdkLO-uRU
 * [Future Direction](#future-direction)
 
 ## Project Idea
-This is a picture of an Epipremnum(a.k.a, Devil's Ivy) that we bought from Ikea to serve as the model for our project's demonstration.
-![A picture of an epipremnum that we just bought from Ikea.](https://github.com/oscargao98/4180_Final_Project/blob/main/green's_new_home_small.jpg)
+Attending in class helps students to fully understand the content. If we miss the class, it is hard to catch up what is covered in class. And if this kind of situation happens repeatly, student might be fail the class. But it is hard for both professor and students to do the attendance check manually. And there is chance to do the fake attendance check. 
 
-We love our desk plants: They make our room prettier, and they make us feel good when we look at them. However, sometimes we're simply too busy to spend time taking care of our green friends, because let's face it: If we had more time, we'd get a dog instead. Nevertheless, plants are living things so it deserves our love, or, our smart device's love.
+Our idea for the ECE-4180(Spring 2022)'s final project is to build a Attendance check robot. The professor will first set the password for its day, and let student know the password. Once the password is set properly, the robot will turn on its camera and recognize the student's face according to the collected data previously. Student will then press the white button to enter the password. If the student entered the correct password given by the professor, the green RGB light will turned on, and student's name data will be updated to the attendace xls sheet. If the student fails to enter the correct password, the red RGB light will be turned on, and student's name will not be updated in attendance xls sheet. After entering the password, the robot will move approximately 12 inchs so that next student will be able to do the attendance check. After the certain collection time(demo will be 2 mins) has passed, our robot will automatically send the attendance sheet through the professor’s email in xls format. 
 
-Our idea for the ECE-4180(Fall 2020)'s final project is to build a smart desk gardening solution. This is a smart machine that takes care of user’s indoor plant. It is an automated device that it controlled by two Mbed microcontrollers: one controls two motors and the other one controls other functions. It blocks direct sunlight when the ambient light level is too intense, and provide additional light when there's not enough sunlight. It has a water level sensor attached to a water container. When the water level is low, it alerts the homeowner by sounding an alarm and light up a warning light, urging them to refill. It senses the soil moisture level twice a day: When the moisture level is low, it waters the plant by controlling a pipe attached to the water container. It has an easy-to-use user interface consisted of a LCD screen and six pushbuttons, which displays the environmental values (light level, soil moisture level, and water level) and allows users to set desired light level and moisture level based on the species of their plant.
 
 ![block diagram](https://github.com/oscargao98/4180_Final_Project/blob/main/block_final.png)
 Block diagram of our device.
