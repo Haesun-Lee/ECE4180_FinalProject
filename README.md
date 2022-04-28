@@ -27,8 +27,8 @@ Attending in class helps students to fully understand the content. If we miss th
 Our idea for the ECE-4180(Spring 2022)'s final project is to build a Attendance check robot. The professor will first set the password for its day, and let student know the password. Once the password is set properly, the robot will turn on its camera and recognize the student's face according to the collected data previously. Student will then press the white button to enter the password. If the student entered the correct password given by the professor, the green RGB light will turned on, and student's name data will be updated to the attendace xls sheet. If the student fails to enter the correct password, the red RGB light will be turned on, and student's name will not be updated in attendance xls sheet. After entering the password, the robot will move approximately 12 inchs so that next student will be able to do the attendance check. After the certain collection time(demo will be 2 mins) has passed, our robot will automatically send the attendance sheet through the professor’s email in xls format. 
 
 
-![block diagram](https://github.com/oscargao98/4180_Final_Project/blob/main/block_final.png)
-Block diagram of our device.
+![](/Flowchart.png)
+Flow chart of our robot.
 
 ## Parts List
 
@@ -58,9 +58,6 @@ Here's a few pictures of our fully assembled device.
 ![](/Car_side.jpeg)
 
 The main software tools that we are going to use for our final project are OpenCV (an open-source computer vision package) to first collect the student’s face data and recognize the student face by training the data. 
-
-### Flow Chart
-![](/Flowchart.png)
 
 
 #### Schematic
