@@ -100,7 +100,231 @@ Finally, our robot is ready to recognize student face. Try running :
 
 ## Source Code
 
+Code to move our robot forward :
+'''
+def forward(sec):
+    GPIO.output(17, False)
+    GPIO.output(22, True)
+    GPIO.output(23, False)
+    GPIO.output(24, True)
+    time.sleep(sec)
+    #GPIO.cleanup()
+'''
+
+Code for professor to set the password :
+'''
+def setPassword(Password_Setting, Password):
+    while Password_Setting:
+        blue()
+        button1 = GPIO.input(BUTTON_PIN1)
+        button2 = GPIO.input(BUTTON_PIN2)
+        button3 = GPIO.input(BUTTON_PIN3)
+        button4 = GPIO.input(BUTTON_PIN4)
+        if button1 == False:
+            print('button 1 pressed')
+            Password += '1'
+            time.sleep(0.2)
+            
+        if button2 == False:
+            print('button 2 pressed')
+            Password += '2'
+            time.sleep(0.2)
+            
+        if button3 == False:
+            print('button 3 pressed')
+            Password += '3'
+            time.sleep(0.2)
+            
+        if button4 == False:
+            print('ENTER pressed')
+            print('Your password is set to : ' , Password)
+            Password_Setting = False
+            white()
+            time.sleep(0.5)
+            turnOff()
+            time.sleep(0.5)
+            white()
+            time.sleep(0.5)
+            turnOff()
+            time.sleep(0.5)
+            
+            
+    return Password
+'''
+
+Code to check if student enters the correct password :
+'''
+def password(Password_Checking, checkPW, Password) :
+    while Password_Checking:
+        button1 = GPIO.input(BUTTON_PIN1)
+        button2 = GPIO.input(BUTTON_PIN2)
+        button3 = GPIO.input(BUTTON_PIN3)
+        button4 = GPIO.input(BUTTON_PIN4)
+        if button1 == False:
+            print('button 1 pressed')
+            checkPW += '1'
+            time.sleep(0.2)
+            
+        if button2 == False:
+            print('button 2 pressed')
+            checkPW += '2'
+            time.sleep(0.2)
+            
+        if button3 == False:
+            print('button 3 pressed')
+            checkPW += '3'
+            time.sleep(0.2)
+            
+        if button4 == False:
+            print('ENTER pressed')
+            Password_Checking = False
+            print("Password you entered : ", checkPW)
+            print(checkPW)
+            print(Password)
+            if checkPW == Password :
+                green()
+                print("attendance checked!")
+                checkPW = ''
+                sleep(2)
+                turnOff()
+                reverse(1)
+                initialize(2)
+                return True
+            else:
+                print("Failed to check attendance")
+                red()
+                checkPW = ''
+                sleep(2)
+                turnOff()
+                reverse(1)
+                initialize(2)
+                return False
+            time.sleep(0.2)
+'''
+
+Code for face recognition & updating student's name in attendance sheet :
+
+'''
+def faceRecognition(Password_Checking, checkPW, Password):
+    now = datetime.today().strftime('%Y-%m-%d')
+    wb = Workbook()
+    sheet1 = wb.add_sheet('Sheet 1')
+
+    col = 2
+    sheet1.write(0, 0, 'Attendance')
+
+    #iniciate id counter
+    id = 0
+
+    # names related to ids: example ==> KUNAL: id=1,  etc
+    names = ['None', 'Haesun', 'Jueun', 'Haesun', 'Jueun', 'W']
+
+    # Initialize and start realtime video capture
+    cam = cv2.VideoCapture(0)
+    cam.set(3, 640) # set video widht
+    cam.set(4, 480) # set video height
+
+    # Define min window size to be recognized as a face
+    minW = 0.1*cam.get(3)
+    minH = 0.1*cam.get(4)
+
+    while Password_Checking:
+        if  time.time() > timeout:
+            break
+        
+        input_state = GPIO.input(LED_PIN)
+        if input_state == False:
+            print('Captured')
+            print(id)
+            if password(Password_Checking, checkPW, Password):          
+                sheet1.write(col, 0, id)
+                col += 1
+                time.sleep(0.2)
+            
+        
+        ret, img =cam.read()
+        #img = cv2.flip(img, -1) # Flip vertically
+        gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+
+        faces = faceCascade.detectMultiScale(
+            gray,
+            scaleFactor = 1.2,
+            minNeighbors = 5,
+            minSize = (int(minW), int(minH)),
+           )
+
+        for(x,y,w,h) in faces:
+            cv2.rectangle(img, (x,y), (x+w,y+h), (0,255,0), 2)
+            id, confidence = recognizer.predict(gray[y:y+h,x:x+w])
+
+            # Check if confidence is less them 100 ==> "0" is perfect match
+            if (confidence < 100):
+                id = names[id]
+                confidence = "  {0}%".format(round(100 - confidence))
+            else:
+                id = "unknown"
+                confidence = "  {0}%".format(round(100 - confidence))
+
+            cv2.putText(img, str(id), (x+5,y-5), font, 1, (255,255,255), 2)
+            cv2.putText(img, str(confidence), (x+5,y+h-5), font, 1, (255,255,0), 1)
+
+        cv2.imshow('camera',img)
+
+        k = cv2.waitKey(10) & 0xff # Press 'ESC' for exiting video
+        if k == 27:
+            break
+
+    # Do a bit of cleanup
+    print("\n Exiting Program")
+    now = now+'.xls'
+    wb.save(now)
+    cam.release()
+    cv2.destroyAllWindows()
+    os.system('python3 test_email.py ')
+'''
+
+Code for sending attendance sheet to professor's email :
+'''
+fromaddr = "dydrkfl9797@gmail.com"
+toaddr = "jjjleee10@gmail.com"
+msg = MIMEMultipart()
+msg['From'] = fromaddr
+msg['To'] = toaddr
+msg['Subject'] = "Today's attendance"
+
+body = "Today's attendance"
+
+msg.attach(MIMEText(body, 'plain'))
+
+now = datetime.today().strftime('%Y-%m-%d')
+now = now +'.xls'
+
+filename = now
+path = '/home/heyjueun/opencv-3.3.0/data/haarcascades/'
+path = path + now
+attachment = open(path, "rb")
+part = MIMEBase('application', 'octet-stream')
+part.set_payload((attachment).read())
+encoders.encode_base64(part)
+part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
+msg.attach(part)
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+
+server.login(fromaddr, "@2Ne1090517")
+text = msg.as_string()
+server.sendmail(fromaddr, toaddr, text)
+server.quit()
+'''
+
 ## Future Direction
+
+## Author
+* Haesun Lee
+* Jueun Lee
+
+## Version
+* 1.0
 
 
 
