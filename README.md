@@ -33,20 +33,13 @@ Block diagram of our device.
 ## Parts List
 
 Electronics:
-* 2 Mbed LPC1768, https://www.sparkfun.com/products/9564
-* LCD Display: uLCD-144G2, https://www.sparkfun.com/products/11377
-* Water Level Sensor: https://www.amazon.com/ARCELI-Sensor-Droplet-Detection-Arduino/dp/B07BP7B9TR
-* Soil Moisture Sensor: SEN-13322, https://www.sparkfun.com/products/13322
-* Ambient Light Sensor: TEMT-6000, https://www.sparkfun.com/products/8688
-* LED Array: Adafruit NeoPixel NeoMatrix 8x8, https://www.adafruit.com/product/1487
-* Red LED: https://www.sparkfun.com/products/10632
-* 6 Pushbuttons: https://www.sparkfun.com/products/97
-* Speaker: https://www.sparkfun.com/products/11089
-* Transistor: 2N3904, https://www.sparkfun.com/products/521
-* 2 Servos: HS-442, https://www.servocity.com/hs-422-servo
-* Power Supply: HW-131, https://www.cafago.com/en/p-e8575.html
-* Resistors: 330ohm, https://www.sparkfun.com/products/14490
-* Jumper Wires(M/M and M/F): https://www.sparkfun.com/products/124, https://www.sparkfun.com/products/12794
+* 1 Raspberry pi 4, Click [here](https://www.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TC2BK1X/ref=asc_df_B07TC2BK1X/?tag=&linkCode=df0&hvadid=380145854123&hvpos=&hvnetw=g&hvrand=1077202658962757536&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9010778&hvtargid=pla-818643320764&ref=&adgrpid=85982211068&th=1) to view the parts
+* 2 DC Motors : ROB-13302, Click [here](https://www.digikey.com/en/products/detail/sparkfun-electronics/ROB-13302/5684382?utm_adgroup=Motors%20-%20AC%2C%20DC&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_Motors%2C%20Solenoids%2C%20Driver%20Boards%2FModules_NEW&utm_term=&utm_content=Motors%20-%20AC%2C%20DC&gclid=Cj0KCQjw06OTBhC_ARIsAAU1yOVcqJy4c90pXfKolLJ4Rutqnd1u-5OmbhpIltpJvcxZlV09HCguXmYaAgrDEALw_wcB) to view the parts
+* USB Web Cam, Click [here](https://www.amazon.com/Microphone-Streaming-Computer-Conferencing-Recording/dp/B087WT6L6B/ref=asc_df_B087WT6L6B/?tag=&linkCode=df0&hvadid=416694317409&hvpos=&hvnetw=g&hvrand=2414832459710564432&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9010778&hvtargid=pla-910393941550&ref=&adgrpid=94693386435&th=1) to view the parts
+* 4 Push Button : 1825967-1, Click [here](https://www.te.com/usa-en/product-1825967-1.html?te_bu=Cor&te_type=srch&te_campaign=ggl_usa_cor-ggl-usa-srch-smbmktg-fy22-googlefeed_sma_sma-2210_2&elqCampaignId=115724&mkwid=RVA2RxlB%7Cpcrid%7C386964346949%7Cpkw%7C%7Cpmt%7C%7Cpdv%7Cc%7Cslid%7C%7Cproductid%7C1825967-1%7Cpgrid%7C78782457963%7Cptaid%7Cpla-825855726955%7C&utm_content=RVA2RxlB%7Cpcrid%7C386964346949%7Cpkw%7C%7Cpmt%7C%7Cpdv%7Cc%7Cslid%7C%7Cproductid%7C1825967-1%7Cpgrid%7C78782457963%7Cptaid%7Cpla-825855726955&gclid=Cj0KCQjw06OTBhC_ARIsAAU1yOWL_PZpx7OY7mFoOoDWu_ioH8U2DmBBL420hPBMHMKxV6d-SQ9NfEIaAmPPEALw_wcB) to view the parts
+* Power Supply: HW-131, Click [here](https://www.cafago.com/en/p-e8575.html) to view the parts
+* Resistors : 330ohm, Click [here](https://www.sparkfun.com/products/14490) to view the parts
+* Jumper Wires(M/M and M/F) : Click [here](https://www.sparkfun.com/products/124) [here] (https://www.sparkfun.com/products/12794) to view the parts
 
 Non-electronics:
 * A desk
