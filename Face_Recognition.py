@@ -270,7 +270,7 @@ def faceRecognition(Password_Checking, checkPW, Password):
             break
 
     # Do a bit of cleanup
-    print("\n [INFO] Exiting Program and cleanup stuff")
+    print("\n Exiting Program")
     now = now+'.xls'
     wb.save(now)
     cam.release()
