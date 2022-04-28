@@ -85,6 +85,19 @@ The main software tools that we are going to use for our final project are OpenC
 
 (Note: Use of external 5v power is REQUIRED, because we need enough current to drive servos.
 
+## How to Run 
+First, we need to install OpenCv and Numpy for the face recognition.
+* Installation Guide for [OpenCV and Numpy](https://singleboardbytes.com/647/install-opencv-raspberry-pi-4.htm)
+
+After installing all the libraries, we need to get the student's face data by running : 
+<pre><code>python3 Face_Data_collect.py</code></pre>
+
+Next, we need to train our robot with the data that we have collected bu running :
+<pre><code>python3 Face_Recognition.py</code></pre>
+
+Finally, our robot is ready to recognize student face. Try running :
+<pre><code>python3 Face_Recognition.py</code></pre>
+
 ## Source Code
 
 ## Future Direction
