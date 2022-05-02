@@ -112,7 +112,7 @@ def forward(sec):
 ~~~
 
 Code for professor to set the password :
-'''
+~~~py
 def setPassword(Password_Setting, Password):
     while Password_Setting:
         blue()
@@ -150,10 +150,10 @@ def setPassword(Password_Setting, Password):
             
             
     return Password
-'''
+~~~
 
 Code to check if student enters the correct password :
-'''
+~~~py
 def password(Password_Checking, checkPW, Password) :
     while Password_Checking:
         button1 = GPIO.input(BUTTON_PIN1)
@@ -200,11 +200,11 @@ def password(Password_Checking, checkPW, Password) :
                 initialize(2)
                 return False
             time.sleep(0.2)
-'''
+~~~
 
 Code for face recognition & updating student's name in attendance sheet :
 
-'''
+~~~py
 def faceRecognition(Password_Checking, checkPW, Password):
     now = datetime.today().strftime('%Y-%m-%d')
     wb = Workbook()
@@ -281,10 +281,10 @@ def faceRecognition(Password_Checking, checkPW, Password):
     cam.release()
     cv2.destroyAllWindows()
     os.system('python3 test_email.py ')
-'''
+~~~
 
 Code for sending attendance sheet to professor's email :
-'''
+~~~py
 fromaddr = "dydrkfl9797@gmail.com"
 toaddr = "jjjleee10@gmail.com"
 msg = MIMEMultipart()
@@ -315,7 +315,7 @@ server.login(fromaddr, "@2Ne1090517")
 text = msg.as_string()
 server.sendmail(fromaddr, toaddr, text)
 server.quit()
-'''
+~~~
 
 ## Future Direction
 
