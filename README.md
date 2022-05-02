@@ -285,8 +285,8 @@ def faceRecognition(Password_Checking, checkPW, Password):
 
 Code for sending attendance sheet to professor's email :
 ~~~py
-fromaddr = "dydrkfl9797@gmail.com"
-toaddr = "jjjleee10@gmail.com"
+fromaddr = "myemailaddress@gmail.com"
+toaddr = "professoremailaddress@gmail.com"
 msg = MIMEMultipart()
 msg['From'] = fromaddr
 msg['To'] = toaddr
@@ -311,7 +311,7 @@ msg.attach(part)
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
 
-server.login(fromaddr, "@2Ne1090517")
+server.login(fromaddr, "password")
 text = msg.as_string()
 server.sendmail(fromaddr, toaddr, text)
 server.quit()
