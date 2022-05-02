@@ -101,7 +101,7 @@ Finally, our robot is ready to recognize student face. Try running :
 ## Source Code
 
 Code to move our robot forward :
-'''
+''''
 def forward(sec):
     GPIO.output(17, False)
     GPIO.output(22, True)
@@ -109,7 +109,7 @@ def forward(sec):
     GPIO.output(24, True)
     time.sleep(sec)
     #GPIO.cleanup()
-'''
+''''
 
 Code for professor to set the password :
 '''
