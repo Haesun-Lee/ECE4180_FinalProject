@@ -316,7 +316,7 @@ server.quit()
 ~~~
 
 ## Future Direction
-We thought it will be good to have a screen so that student is able to see if his/her face is being recognized, so we will be adding the raspberry pi touch display pad.
+We thought it will be good to have a screen so that student is able to see if his/her face is being recognized, so we will be adding the raspberry pi touch display pad. Also, instead of sending the attendance sheet to the professor, it might be more efficient if we have the database for the student's attendance.
 
 ## Authors
 * Haesun Lee
