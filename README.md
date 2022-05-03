@@ -16,10 +16,13 @@ Demonstration (2min): https://youtu.be/0pqdkLO-uRU
 
 ## Table of Content
 * [Project Idea](#project-idea)
+* [Software Flow chart](#software-flow-chart)
 * [Parts List](#parts-list)
 * [Schematic and Connection Guide](#schematic-and-connection-guide)
 * [Source Code](#source-code)
 * [Future Direction](#future-direction)
+* [Authors](#authors)
+* [Version](#version)
 
 ## Project Idea
 Attending in class helps students to fully understand the content. If we miss the class, it is hard to catch up what is covered in class. And if this kind of situation happens repeatly, student might be fail the class. But it is hard for both professor and students to do the attendance check manually. And there is chance to do the fake attendance check. 
@@ -315,7 +318,7 @@ server.quit()
 ## Future Direction
 We thought it will be good to have a screen so that student is able to see if his/her face is being recognized, so we will be adding the raspberry pi touch display pad.
 
-## Author
+## Authors
 * Haesun Lee
 * Jueun Lee
 
