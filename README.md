@@ -56,14 +56,11 @@ This is our software flow chart of our robot.
 * A curious mind
 
 ## Schematic and Connection Guide
-
-#### Device Setup
 Here's a few pictures of our fully assembled device.
 ![](/Car_side_cross.jpeg)
 ![](/Car_side.jpeg)
 
-The main software tools that we are going to use for our final project are OpenCV (an open-source computer vision package) to first collect the student’s face data and recognize the student face by training the data. 
-
+#### Schematic
 
 #### Connection Table for Uncommon Components
 | Raspberry pi | L293 Motor Driver | DC Motors | Push Buttons | RGB LED | USB Cam | Power Supply |
