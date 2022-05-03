@@ -32,7 +32,7 @@ This is our software flow chart of our robot.
 
 ## Parts List
 
-###Electronics:
+#### Electronics:
 * 1 Raspberry pi 4, Click [here](https://www.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TC2BK1X/ref=asc_df_B07TC2BK1X/?tag=&linkCode=df0&hvadid=380145854123&hvpos=&hvnetw=g&hvrand=1077202658962757536&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9010778&hvtargid=pla-818643320764&ref=&adgrpid=85982211068&th=1) to view the parts
 * 2 DC Motors : ROB-13302, Click [here](https://www.digikey.com/en/products/detail/sparkfun-electronics/ROB-13302/5684382?utm_adgroup=Motors%20-%20AC%2C%20DC&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_Motors%2C%20Solenoids%2C%20Driver%20Boards%2FModules_NEW&utm_term=&utm_content=Motors%20-%20AC%2C%20DC&gclid=Cj0KCQjw06OTBhC_ARIsAAU1yOVcqJy4c90pXfKolLJ4Rutqnd1u-5OmbhpIltpJvcxZlV09HCguXmYaAgrDEALw_wcB) to view the parts
 * USB Web Cam, Click [here](https://www.amazon.com/Microphone-Streaming-Computer-Conferencing-Recording/dp/B087WT6L6B/ref=asc_df_B087WT6L6B/?tag=&linkCode=df0&hvadid=416694317409&hvpos=&hvnetw=g&hvrand=2414832459710564432&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9010778&hvtargid=pla-910393941550&ref=&adgrpid=94693386435&th=1) to view the parts
@@ -44,7 +44,7 @@ This is our software flow chart of our robot.
 * Jumper Wires(M/M and M/F) : Click [here](https://www.sparkfun.com/products/124) [here](https://www.sparkfun.com/products/12794) to view the parts
 
 
-###Non-electronics:
+#### Non-electronics:
 * A desk
 * Students
 * Professor
