@@ -20,6 +20,7 @@ Demonstration (2min): https://youtu.be/0pqdkLO-uRU
 * [Project Idea](#project-idea)
 * [Software Flow chart](#software-flow-chart)
 * [Parts List](#parts-list)
+* [Block Diagram](#Block-Diagram)
 * [Schematic and Connection Guide](#schematic-and-connection-guide)
 * [Source Code](#source-code)
 * [Future Direction](#future-direction)
