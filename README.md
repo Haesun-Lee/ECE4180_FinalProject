@@ -70,11 +70,11 @@ Here's a few pictures of our fully assembled device.
 #### Connection Table for Uncommon Components
 | Raspberry pi | L293 Motor Driver | DC Motors | Push Buttons | RGB LED | USB Cam | Power Supply |
 |--------------|-------------------|-----------|--------------|---------|---------|--------------|
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
+|     3V       |                   |           |              |         |         |              |
+|     5V       |       Vin         |           |              |         |         |     5V       |
+|     GND      |       GND         |           |     GND      |   GND   |         |     GND      |
+|              |       OUT1        |     +     |              |         |         |              |
+|              |       OUT2        |     -     |              |         |         |              |
 |              |                   |           |              |         |         |              |
 |              |                   |           |              |         |         |              |
 |              |                   |           |              |         |         |              |
