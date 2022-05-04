@@ -82,7 +82,7 @@ Here's a few pictures of our fully assembled device.
 |    GPIO23    |       IN3         |           |              |         |         |              |
 |    GPIO24    |       IN4         |           |              |         |         |              |
 |    GPIO11    |       ENA1        |           |              |         |         |              |
-|              |       ENA2        |           |              |         |         |              |
+|    GPIO18    |       ENA2        |           |              |         |         |              |
 |    GPIO5     |                   |           |     1 (+)    |         |         |              |
 |    GPIO6     |                   |           |     2 (+)    |         |         |              |
 |    GPIO26    |                   |           |     3 (+)    |         |         |              |
