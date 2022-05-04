@@ -66,10 +66,11 @@ Here's a few pictures of our fully assembled device.
 ![](/Car_side.jpeg)
 
 #### Schematic
+This is our electrical schematic.
 ![schematic](https://user-images.githubusercontent.com/78533448/166670311-8cd390a1-4448-4bbd-89e3-76e2feed1486.png)
 
 #### Connection Table for Uncommon Components
-| Raspberry pi | L293 Motor Driver | DC Motors | Push Buttons | RGB LED | USB Cam | Power Supply |
+| Raspberry pi | L298N Motor Driver| DC Motors | Push Buttons | RGB LED | USB Cam | Power Supply |
 |--------------|-------------------|-----------|--------------|---------|---------|--------------|
 |     3V       |                   |           |              |         |         |              |
 |     5V       |       Vin         |           |              |         |         |     5V       |
