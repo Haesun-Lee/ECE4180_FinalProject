@@ -75,13 +75,22 @@ Here's a few pictures of our fully assembled device.
 |     GND      |       GND         |           |     GND      |   GND   |         |     GND      |
 |              |       OUT1        |     +     |              |         |         |              |
 |              |       OUT2        |     -     |              |         |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
+|              |       OUT3        |     +     |              |         |         |              |
+|              |       OUT4        |     -     |              |         |         |              |
+|              |       IN1         |           |              |         |         |              |
+|              |       IN2         |           |              |         |         |              |
+|              |       IN3         |           |              |         |         |              |
+|              |       IN4         |           |              |         |         |              |
+|              |       ENA1        |           |              |         |         |              |
+|              |       ENA2        |           |              |         |         |              |
+|    GPIO5     |                   |           |     1 (+)    |         |         |              |
+|    GPIO6     |                   |           |     2 (+)    |         |         |              |
+|    GPIO26    |                   |           |     3 (+)    |         |         |              |
+|    GPIO25    |                   |           |   ENTER (+)  |         |         |              |
+|              |                   |           |    CAPTURE   |         |         |              |
+|    GPIO12    |                   |           |              |   RED   |         |              |
+|    GPIO19    |                   |           |              |  GREEN  |         |              |
+|    GPIO8     |                   |           |              |  BLUE   |         |              |
 |              |                   |           |              |         |         |              |
 |              |                   |           |              |         |         |              |
 |              |                   |           |              |         |         |              |
