@@ -35,10 +35,6 @@ Our idea for the ECE-4180(Spring 2022)'s final project is to build a Attendance 
 This is our software flow chart of our robot.
 ![](/Flowchart.png)
 
-## Block Diagram
-This is our block diagram of our robot
-![diagram](https://user-images.githubusercontent.com/78533448/166670569-dde1be02-0111-4150-ba7b-ccee6c5cd6e9.jpg)
-
 ## Parts List
 
 #### Electronics:
@@ -58,6 +54,10 @@ This is our block diagram of our robot
 * Students
 * Professor
 * A curious mind
+
+## Block Diagram
+This is our block diagram of our robot
+![diagram](https://user-images.githubusercontent.com/78533448/166670569-dde1be02-0111-4150-ba7b-ccee6c5cd6e9.jpg)
 
 ## Schematic and Connection Guide
 Here's a few pictures of our fully assembled device.
