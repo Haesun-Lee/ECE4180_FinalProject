@@ -77,24 +77,21 @@ Here's a few pictures of our fully assembled device.
 |              |       OUT2        |     -     |              |         |         |              |
 |              |       OUT3        |     +     |              |         |         |              |
 |              |       OUT4        |     -     |              |         |         |              |
-|              |       IN1         |           |              |         |         |              |
-|              |       IN2         |           |              |         |         |              |
-|              |       IN3         |           |              |         |         |              |
-|              |       IN4         |           |              |         |         |              |
-|              |       ENA1        |           |              |         |         |              |
+|    GPIO17    |       IN1         |           |              |         |         |              |
+|    GPIO22    |       IN2         |           |              |         |         |              |
+|    GPIO23    |       IN3         |           |              |         |         |              |
+|    GPIO24    |       IN4         |           |              |         |         |              |
+|    GPIO11    |       ENA1        |           |              |         |         |              |
 |              |       ENA2        |           |              |         |         |              |
 |    GPIO5     |                   |           |     1 (+)    |         |         |              |
 |    GPIO6     |                   |           |     2 (+)    |         |         |              |
 |    GPIO26    |                   |           |     3 (+)    |         |         |              |
 |    GPIO25    |                   |           |   ENTER (+)  |         |         |              |
-|              |                   |           |    CAPTURE   |         |         |              |
+|    GPIO14    |                   |           |    CAPTURE   |         |         |              |
 |    GPIO12    |                   |           |              |   RED   |         |              |
 |    GPIO19    |                   |           |              |  GREEN  |         |              |
 |    GPIO8     |                   |           |              |  BLUE   |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
-|              |                   |           |              |         |         |              |
+
 
 (Note: Use of external 5v power is REQUIRED, because we need enough current to drive servos.
 
