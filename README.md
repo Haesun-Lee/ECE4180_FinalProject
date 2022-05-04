@@ -6,9 +6,7 @@
 
 Watch our video presentation and demo:
 
-Presentation Video (5min):
-
-Presentation Slide : https://docs.google.com/presentation/d/1dY4bCMGJTAA4-nHcASC5jcGp0Mmf3YF5dnUtclSm6NY/edit?usp=sharing
+Presentation Video (5min): https://youtu.be/Fm6s28aJl7k
 
 Demonstration (2min): https://youtu.be/0pqdkLO-uRU
 
