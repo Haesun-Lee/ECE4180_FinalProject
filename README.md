@@ -61,6 +61,7 @@ Here's a few pictures of our fully assembled device.
 ![](/Car_side.jpeg)
 
 #### Schematic
+![schematic](https://user-images.githubusercontent.com/78533448/166670311-8cd390a1-4448-4bbd-89e3-76e2feed1486.png)
 
 #### Connection Table for Uncommon Components
 | Raspberry pi | L293 Motor Driver | DC Motors | Push Buttons | RGB LED | USB Cam | Power Supply |
